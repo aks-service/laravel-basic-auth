@@ -2,9 +2,9 @@
 
 namespace AksService\LaravelBasicAuth;
 
+use AksService\LaravelBasicAuth\Commands\LaravelBasicAuthCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use AksService\LaravelBasicAuth\Commands\LaravelBasicAuthCommand;
 
 class LaravelBasicAuthServiceProvider extends PackageServiceProvider
 {
@@ -17,6 +17,5 @@ class LaravelBasicAuthServiceProvider extends PackageServiceProvider
             ->hasMigration('create_laravel_basic_auth_table')
             ->hasCommand(LaravelBasicAuthCommand::class);
 
-        
     }
 }

@@ -2,9 +2,9 @@
 
 namespace AksService\LaravelBasicAuth\Tests;
 
+use AksService\LaravelBasicAuth\LaravelBasicAuthServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AksService\LaravelBasicAuth\LaravelBasicAuthServiceProvider;
 
 class TestCase extends Orchestra
 {
