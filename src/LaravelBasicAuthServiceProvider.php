@@ -3,15 +3,12 @@
 namespace AksService\LaravelBasicAuth;
 
 use AksService\LaravelBasicAuth\Http\Middleware\LaravelBasicAuthMiddleware;
-use Illuminate\Contracts\Container\BindingResolutionException;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use AksService\LaravelBasicAuth\Commands\LaravelBasicAuthCommand;
 use Symfony\Component\HttpKernel\HttpKernel;
 
 class LaravelBasicAuthServiceProvider extends PackageServiceProvider
 {
-
     public function packageBooted(): void
     {
         $this->app->booted(function ($app) {
@@ -20,7 +17,6 @@ class LaravelBasicAuthServiceProvider extends PackageServiceProvider
             $app->make(HttpKernel::class)->setMiddleware($middleware);
         });
     }
-
 
     public function configurePackage(Package $package): void
     {
