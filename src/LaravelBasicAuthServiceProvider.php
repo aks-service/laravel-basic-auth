@@ -5,12 +5,10 @@ namespace AksService\LaravelBasicAuth;
 use AksService\LaravelBasicAuth\Http\Middleware\LaravelBasicAuthMiddleware;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use AksService\LaravelBasicAuth\Commands\LaravelBasicAuthCommand;
 use Symfony\Component\HttpKernel\HttpKernel;
 
 class LaravelBasicAuthServiceProvider extends PackageServiceProvider
 {
-
     public function boot(): LaravelBasicAuthServiceProvider
     {
         $this->app->booted(function ($app) {
