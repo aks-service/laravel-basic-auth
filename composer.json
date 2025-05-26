@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "aks-service/laravel-basic-auth",
+    "description": "This is my package laravel-basic-auth",
     "keywords": [
-        ":vendor_name",
+        "AKS-Service GmbH",
         "laravel",
-        ":package_slug"
+        "laravel-basic-auth"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/aks-service/laravel-basic-auth",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Justin Preuß",
+            "email": "justin.preuss@aks-service.de",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "AksService\\LaravelBasicAuth\\": "src/",
+            "AksService\\LaravelBasicAuth\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "AksService\\LaravelBasicAuth\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "AksService\\LaravelBasicAuth\\LaravelBasicAuthServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelBasicAuth": "AksService\\LaravelBasicAuth\\Facades\\LaravelBasicAuth"
             }
         }
     },
