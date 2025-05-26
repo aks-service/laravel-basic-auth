@@ -13,7 +13,7 @@ class LaravelBasicAuthMiddleware
         }
 
         $username = config('basic-auth.username');
-        $password = config('basic_auth.password');
+        $password = config('basic-auth.password');
 
         if (
             $request->getUser() !== $username
