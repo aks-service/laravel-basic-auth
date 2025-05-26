@@ -10,7 +10,6 @@ use Symfony\Component\HttpKernel\HttpKernel;
 
 class LaravelBasicAuthServiceProvider extends PackageServiceProvider
 {
-
     /**
      * @throws BindingResolutionException
      */
